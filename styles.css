@@ -1,0 +1,83 @@
+body{
+    background: linear-gradient(black,  #165e09);
+    font-family: "Exo 2", sans-serif ;
+    padding: 4px;
+    margin: 4px;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: black;
+}
+#txt-01{
+    text-align: left;
+}
+
+#main-img{
+    display: left;
+    margin: auto;
+    width: 550px;
+    height: auto;
+    transition: 0.3s;
+}
+#main-img:hover{
+    transform: scale(1.1);
+}
+
+.btns {
+    width: 120px;
+    height: 45px;
+    background-color: blue;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.btns:hover{
+    transform: scale(1.1);
+
+}
+#Contact{
+    margin: 2px 0;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(7, 62, 1);
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+
+.support{
+    
+    padding: 10px;
+    width: 300px;
+    height: 200;
+    background-color: rgb(6, 56, 1);
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+#e-sup{
+    width: 140px;
+    height: 32px;
+    background-color: #072502;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+#c-sup{
+    width: 140px;
+    height: 32px;
+    background-color: #072502;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
