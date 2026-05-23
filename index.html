@@ -6,7 +6,10 @@
   <title>Word Puzzle🧩 and Mind Games🎮</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&family=Orbitron:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
 </head>
 
@@ -14,8 +17,8 @@
   <header id="header">
     <nav class="games-nav">
       <a href="#">Home🏠</a>
-      <a href="#">Word Puzzle🧠</a>
       <a href="#">Games🎮</a>
+      <a href="#">FeedBack📬</a>
       <a href="#">leaderboard🏆</a>
       <a href="#">Contact Us📞 !</a>
     </nav>
@@ -24,8 +27,7 @@
   <main>
     <section id="main">
       <div id="main-hd">
-        <h1 id="heading">Word Puzzle🧩</h1>
-        <h1 id="heading">and Mind Games🎮</h1>
+        <h1 id="h1-1" class="heading">Word Puzzle🧩<br> <span>& Mind Games🎮</span> </h1>
         <p>Play Mind Games Sharp Your Brain Boost Your IQ⚡</p>
         <p>
           Challenge your mind, train your brain, and compete with players
@@ -33,89 +35,88 @@
         </p>
         <p>Solve puzzles, find words, and beat the clock!</p>
         <div id="stats">
-         <h4 id="st-01">10000+ Active players</h4>
-         <h4 id="st-02">50+ Puzzle Games</h4>
+          <h4 id="st-01">10000+ Active players</h4>
+          <h4 id="st-02">50+ Puzzle Games</h4>
         </div>
       </div>
+      <br>
+      <button id="st-p">Start Playing 🚀</button>
     </section>
+<br>
+<br>
 
+    <h1 id="h1-3">🎮 Choose Your Game</h1>
+    <p id="p-1">Pick a challenge and test your mental skills</p>
+    <br>
     <section id="games">
 
-     <div id="card-01" class="g-cards">
-       <h2>🧠</h2>
-       <h2 id="txt-01">Word Puzzle</h2>
+      <div id="card-01" class="g-cards">
+        <h2>🧠</h2>
+        <h2 id="g-cards-h2">Word Puzzle</h2>
         <p>Connect alphabets to form meaningful words.</p>
-       <ul>
-         <li>Find hidden numbers from the grid</li>
-         <li>No word should be repeated</li>
-         <li>Mulltiple difficulty levels</li>
-       </ul>
-       <div id="btn-1" class="p-btns">
-       <button id="btn-play" class="btns" >Play Now </button>
-       </div>
+        <ul>
+          <li>Find hidden numbers from the grid</li>
+          <li>No word should be repeated</li>
+          <li>Mulltiple difficulty levels</li>
+        </ul>
+        <div id="btn-1" class="p-btns">
+          <button id="btn-play" class="btns">Play Now▶ </button>
+        </div>
       </div>
       <div id="card-02" class="g-cards">
         <h2>🔢</h2>
-       <h2>Sudoku</h2>
-       <p>Fill the 9×9 grid so every row, column</p>
-       <ul>
+        <h2 id="g-cards-h2">Sudoku</h2>
+        <p>Fill the 9×9 grid so every row, column.</p>
+        <ul>
           <li>Fill in the missing numbers</li>
-          <li>No number can repeat in a row, column, or box</li>
+          <li>No number can repeat in a row/column/box</li>
           <li>Multiple difficulty levels</li>
-       </ul>
-       <div id="btn-2" class="p-btns">
-         <button id="btn-play" class="btns">Play Now</button>
-       </div>
+        </ul>
+        <div id="btn-2" class="p-btns">
+          <button id="btn-play" class="btns">Play Now▶</button>
+        </div>
       </div>
       <div id="card-03" class="g-cards">
-       <h2>🎯</h2>
-       <h2>Number Match</h2>
-       <p>Match numbers that add up to the target value. Clear the board to win!</p>
-       <ul>
-         <li>Match pairs of numbers</li>
-         <li>Clear the board to win</li>
-         <li>Multiple difficulty levels</li>
-       </ul>
-       <div id="btn-3" class="p-btns">
-         <button id="btn-play" class="btns">Play Now</button>
-       </div>
+        <h2>🎯</h2>
+        <h2 id="g-cards-h2">Number Match</h2>
+        <p>Match numbers that add up to the target value.</p>
+        <ul>
+          <li>Match pairs of numbers</li>
+          <li>Clear the board to win</li>
+          <li>Multiple difficulty levels</li>
+        </ul>
+        <div id="btn-3" class="p-btns">
+          <button id="btn-play" class="btns">Play Now▶</button>
+        </div>
       </div>
       <div id="card-04" class="g-cards">
         <h2>🧮</h2>
-       <h2>Math Quiz</h2>
+        <h2 id="g-cards-h2">Math Quiz</h2>
+        <p>Test your math skills under pressure! Answer fast before time runs out.</p>
         <ul>
-         <li>Test your math under pressure</li>
-         <li>Answer fast math questions before time runs out</li>
-         <li>Questions get harder as your score increases</li>
-         <li>Every correct answer boosts your score multiplier</li>
+          <li>Fast math questions</li>
+          <li>Questions get harder as score rises</li>
+          <li>Score multiplier system</li>
         </ul>
-       <div id="btn-4" class="p-btns">
-         <button id="btn-play" class="btns">Play Now</button>
-       </div>
+        <div id="btn-4" class="p-btns">
+          <button id="btn-play" class="btns">Play Now▶</button>
+        </div>
       </div>
       <div id="card-05" class="g-cards">
-       <h2>🔮</h2>
-       <h2>Guess The Number</h2>
-       <p>Test your sixth sense! Guess the secret number before attempts run out.</p>
-       <ul>
-         <li>Answer fast get more points to win</li>
-         <li>Complete task before time</li>
-         <li>Every Answer boosts your Scores</li>
-         <li>Multiple difficulty levels</li>
-         <p></p>
-       </ul>
+        <h2>🔮</h2>
+        <h2 id="g-cards-h2">Guess The Number</h2>
+        <p>Test your sixth sense! Guess the secret number </p>
+        <ul>
+          <li>Answer fast for more points</li>
+          <li>Get hot/cold hints</li>
+          <li>Every answer boosts your score</li>
+        </ul>
         <div id="btn-5" class="p-btns">
-         <button id="btn-play" class="btns">Play Now</button>
+          <button id="btn-play" class="btns">Play Now▶</button>
         </div>
       </div>
     </section>
     <br>
-    <section id="leaderboard">
-      <div id="ld-01">
-        <h2 id="ldr-hed">Leaderboard🏆</h2>
-      </div> 
-    </section>
-      <br>
     <section id="FeedBack">
       <div id="fd-b" class="cont-1">
         <form action="#" method="post">
@@ -171,14 +172,77 @@
             </label>
           </div>
           <br>
-          <button type="submit" id="sub-btn" class="btns">Submit</button>
-          <button type="reset" id="clr-btn" class="btns">Clear</button>
+          <button type="submit" id="sub-btn" class="btns">Submit📤</button>
+          <button type="reset" id="clr-btn" class="Clearbtn">Clear🗑</button>
       </div>
     </section>
     </form>
 
-  </div>
+    </div>
 
+    <br>
+    <section id="leaderboard">
+      <div id="ld-01">
+        <h2 id="ldr-hed">Leaderboard🏆</h2>
+        <table id="ldb-tbl" border="1">
+          <tr>
+            <th>Rank</th>
+            <th>Trophy</th>
+            <th>Player Name</th>
+            <th>Game Name</th>
+            <th>Score</th>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>🏆</td>
+            <td>Sohaib</td>
+            <td>Math Quiz</td>
+            <td>9990</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>🥈</td>
+            <td>Saad</td>
+            <td>Sudoku Master</td>
+            <td>9650</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>🥉</td>
+            <td>Ali Khan</td>
+            <td>Puzzle Master</td>
+            <td>9800</td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>🏅</td>
+            <td>Ahmed Raza</td>
+            <td>Number Match</td>
+            <td>8700</td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>🎖️</td>
+            <td>Usman Ali</td>
+            <td>Sudoku Pro</td>
+            <td>7600</td>
+          </tr>
+
+          <tr>
+            <td>6</td>
+            <td>🏅</td>
+            <td>Sara Ahmed</td>
+            <td>Guess Number</td>
+            <td>6900</td>
+          </tr>
+        </table>
+      </div>
+    </section>
     <br>
     <footer>
       <div class="support">
@@ -191,6 +255,7 @@
           <a id="ch-sup" href="https//:wa.me/03357741537">Chat Support 📞</a>
         </div>
       </div>
+      <P id="p-1">© 2026 Puzzle Games All Rights Reserved</p>
     </footer>
   </main>
 </body>
