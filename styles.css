@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(black,  #165e09);
+    background: linear-gradient(black,  #082502);
     font-family: "Exo 2", sans-serif ;
     padding: 4px;
     margin: 4px;
@@ -17,35 +17,64 @@ nav{
     text-align: left;
 }
 
-#main-img{
-    display: left;
-    margin: auto;
-    width: 550px;
-    height: auto;
-    transition: 0.3s;
+#stats{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
-#main-img:hover{
-    transform: scale(1.1);
+
+#st-01, #st-02{
+    width: 130px;
+    height: 45px;
+    background-color: #36b120;
+    border: 2px solid ;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
 .btns {
     width: 120px;
     height: 45px;
-    background-color: blue;
-    border: 2px solid rgb(0, 0, 0);
+    background-color: #36b120;
+    border: 2px solid #7daa74;
     border-radius: 10px;
     transition: 0.4s;
+    color: white;
+}
+
+.g-cards{
+    display: inline-table;
+    justify-content: center;
+    width: 300px;
+    height: 270px;
+    background-color: #082502;
+    border: 1px solid rgb(56, 221, 38);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+
+.p-btns{
+    display: flex;
+    justify-content: right;
+    gap: 100px;
 }
 
 .btns:hover{
     transform: scale(1.1);
 
 }
-#Contact{
-    margin: 2px 0;
+
+
+
+#fd-b{
+    display: grid;
+    align-self: center;
+    margin: auto;
     padding: 10px;
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 500px;
     background-color: rgb(7, 62, 1);
     border: 2px solid white;
     border-radius: 10px;
@@ -68,6 +97,7 @@ nav{
     background-color: #072502;
     border: 2px solid white;
     border-radius: 10px;
+    transition: 0.3s;
 }
 #c-sup{
     width: 140px;
@@ -75,9 +105,55 @@ nav{
     background-color: #072502;
     border: 2px solid white;
     border-radius: 10px;
+    transition: 0.3s;
+}
+#c-sup:hover{
+    transform: scale(1.1);
+}
+#e-sup:hover{
+    transform: scale(1.1);
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+#main-hd{
+    text-align: center;
+
+
+}
+
+/**#ld-01{
+    position: absolute;
+    top: 1605px;
+    left: 600px;
+    padding: 10px;
+    width: 600px;
+    height: 642px;
+    background-color: #0d3f04;
+    border: 2px solid white;
+    border-radius: 10px;
+}**/
+
+
+#fdb{
+    text-align: center;
+    
+}
+
+#heading{
+    font-style: oblique;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.85rem;
+    font-weight: 600;
+}
+
+/**#ldr-hed{
+    text-align: center;
+}**/
+
+#main-vid:hover{
+    transform: scale(1.1);
 }
