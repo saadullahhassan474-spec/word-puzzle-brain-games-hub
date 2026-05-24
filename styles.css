@@ -41,6 +41,7 @@ nav{
     transition: 0.4s;
     color: white;
     cursor: pointer;
+    font-family: 'Exo 2', sans-serif
 }
 
 #clr-btn{
@@ -51,14 +52,17 @@ nav{
     margin: auto;
     border: 1px solid white;
     border-radius: 10px;
-    background-color: rgb(7, 45, 3);
+    background-color: transparent;
     transition: 0.3s;
     cursor: pointer;
     color: white;
+    font-family: 'Exo 2', sans-serif
 }
 
 #clr-btn:hover{
     transform: scale(1.1);
+    border-color: red;
+    color: red;
 }
 
 #games{
@@ -76,11 +80,12 @@ nav{
     justify-content: space-between;
     width: 300px;
     height: 450px;
-    background-color: #082502;
+    background-color: transparent;
     border: 1px solid rgb(56, 221, 38);
     border-radius: 10px;
     padding: 10px;
     transition: 0.3s;
+    cursor: pointer;
 
 }
 
@@ -131,15 +136,13 @@ nav{
     font-family: 'Orbitron', sans-serif;
     font-size: 15px;
     font-weight: 700;
-    color: white;
-    letter-spacing: 2px;
     color: #8dd5b4;
     padding: 10px 10px 20px 20px;
     width: 155px;
     height: 55px;
     margin: auto;
     border: 1px solid white;
-    background-color: #36b120;
+    background-color: transparent;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
@@ -158,12 +161,13 @@ nav{
 #fd-b{
     margin: auto;
     padding: 10px;
-    width: 350px;
+    width: 350;
     height: fit-content;
     background-color: rgb(7, 45, 3);
     border: 2px solid white;
     border-radius: 10px;
     transition: 0.3s;
+    cursor: pointer;
 
 }
 
@@ -182,6 +186,36 @@ nav{
     font-weight: 700;
     color: #00ff99;
     letter-spacing: 2px;
+
+}
+
+.fdb-area{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#inpt{
+    width: 100%;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-left: 15px;
+    background-color: transparent;
+    justify-content: center;
+    color: white;
+}
+
+#slct{
+    color: black;
+}
+
+#textarea{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius:15px;
 
 }
 
@@ -230,11 +264,22 @@ a {
     border: 2px solid white;
     border-radius: 20px;
     transition: 0.3s;
+    cursor: pointer;
     
 }
 
-#ldr-tbl{
-    
+table{
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+
+th, td{
+    border: 2px solid white;
+    padding: 15px;
+    color: white;
 }
 
 #ld-01:hover{
@@ -256,6 +301,103 @@ a {
     letter-spacing: 2px;
 }
 
+#aboutUs{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#about-us{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #8dd5b4;
+}
+
+#saad{
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+
+#instructor{
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#h-name{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #8dd5b4;
+}
+
+#avtar{
+    font-size: 45px;
+    text-align: center;
+
+}
+
+.abt-btn{
+    width: 120px;
+    height: 45px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.4s;
+    color: white;
+    cursor: pointer;
+    font-family: 'Exo 2', sans-serif;
+    transition: 0.3s;
+}
+
+.abt-btn:hover{
+    transform: scale(1.1);
+}
+
+#cont-btns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#saad:hover, #instructor:hover{
+    transform: translateY(-10px);
+    box-shadow: 
+     0 0 10px greenyellow,
+     0 0 20px greenyellow,
+     0 0 40px greenyellow;
+
+}
+
+#p-02{
+    text-align: center;
+    padding-top: 10px;
+    width: 150px;
+    height: 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #43b130;
+}
 
 
 footer{

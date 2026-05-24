@@ -21,6 +21,7 @@
       <a href="#">FeedBack📬</a>
       <a href="#">leaderboard🏆</a>
       <a href="#">Contact Us📞 !</a>
+      <a href="#">About Us</a>
     </nav>
   </header>
   <br />
@@ -120,55 +121,55 @@
     <section id="FeedBack">
       <div id="fd-b" class="cont-1">
         <form action="#" method="post">
-          <h3 id="fdb">FeedBack</h3>
-          <div>
+          <h3 id="fdb">FeedBack📬</h3>
+          <div id="fedB-7" class="fdb-area">
             <label id="usr-name" for="name">Name
-              <input type="text" placeholder="Name" required />
+              <input id="inpt" type="text" placeholder="Name" required />
             </label>
           </div>
           <br />
-          <div>
+          <div id="fedB-1" class="fdb-area">
             <label id="usr-age" for="age">Age
-              <input type="number" placeholder="Age" required />
+              <input id="inpt" type="number" placeholder="Age" required />
             </label>
           </div>
           <br />
-          <div>
+          <div id="fedB-2" class="fdb-area">
             <label id="usr-mail" for="email">Email
-              <input type="email" placeholder="email Address" required />
+              <input id="inpt" type="email" placeholder="email Address" required />
             </label>
           </div>
           <br />
-          <div>
+          <div id="fedB-3" class="fdb-area">
             <label id="slct-country" for="country">Country</label>
-            <select name="country" id="c01">
-              <option value="">---Select country---</option>
-              <option value="PK">Pakistan</option>
-              <option value="US">United States</option>
-              <option value="CHI">China</option>
-              <option value="IND">India</option>
-              <option value="BAN">Bangladesh</option>
-              <option value="AFG">Afghanistan</option>
-              <option value="IRN">Iran</option>
-              <option value="Ger">Germany</option>
+            <select name="country" id="inpt" class="cntry">
+              <option id="slct" value="">---Select country---</option>
+              <option id="slct" value="PK">Pakistan</option>
+              <option id="slct" value="US">United States</option>
+              <option id="slct" value="CHI">China</option>
+              <option id="slct" value="IND">India</option>
+              <option id="slct" value="BAN">Bangladesh</option>
+              <option id="slct" value="AFG">Afghanistan</option>
+              <option id="slct" value="IRN">Iran</option>
+              <option id="slct" value="Ger">Germany</option>
             </select>
           </div>
           <br />
-          <div>
+          <div id="fedB-4" class="fdb-area">
             <label id="sbjct" for="subject">Subject
-              <input type="text" placeholder="Write Subject here" required />
+              <input id="inpt" type="text" placeholder="Write Subject here" required />
             </label>
           </div>
           <br />
-          <div>
+          <div id="fedB-5" class="fdb-area">
             <label id="usr-fdb" for="FeedBack">FeedBack
-              <textarea name="message" id="mess" placeholder="Write your message here" required></textarea>
+              <textarea name="message" id="textarea" placeholder="Write your message here" required></textarea>
             </label>
           </div>
           <br />
-          <div>
+          <div id="fedB-6" class="fdb-area">
             <label for="101">
-              <input type="checkbox" id="101" required />Agree terms and conditions
+              <input type="checkbox" id="101" required  />Agree terms and conditions
             </label>
           </div>
           <br>
@@ -184,64 +185,59 @@
     <section id="leaderboard">
       <div id="ld-01">
         <h2 id="ldr-hed">Leaderboard🏆</h2>
-        <table id="ldb-tbl" border="1">
-          <tr>
+        <table id="leaderboard">
+          <thead>
+          <tr id="tbl-hd">
             <th>Rank</th>
-            <th>Trophy</th>
             <th>Player Name</th>
             <th>Game Name</th>
             <th>Score</th>
           </tr>
+          </thead>
+          <tbody id="tbl-body"> 
 
-          <tr>
-            <td>1</td>
-            <td>🏆</td>
-            <td>Sohaib</td>
-            <td>Math Quiz</td>
-            <td>9990</td>
-          </tr>
-
-          <tr>
-            <td>2</td>
-            <td>🥈</td>
-            <td>Saad</td>
-            <td>Sudoku Master</td>
-            <td>9650</td>
-          </tr>
-
-          <tr>
-            <td>3</td>
-            <td>🥉</td>
-            <td>Ali Khan</td>
-            <td>Puzzle Master</td>
-            <td>9800</td>
-          </tr>
-
-          <tr>
-            <td>4</td>
-            <td>🏅</td>
-            <td>Ahmed Raza</td>
-            <td>Number Match</td>
-            <td>8700</td>
-          </tr>
-
-          <tr>
-            <td>5</td>
-            <td>🎖️</td>
-            <td>Usman Ali</td>
-            <td>Sudoku Pro</td>
-            <td>7600</td>
-          </tr>
-
-          <tr>
-            <td>6</td>
-            <td>🏅</td>
-            <td>Sara Ahmed</td>
-            <td>Guess Number</td>
-            <td>6900</td>
-          </tr>
+          </tbody>
         </table>
       </div>
+    </section>
+    <br>
+      <div id="about-us">
+         <h1 >About Us !</h1>
+      </div>
+      <br>
+    <section id="aboutUs">
+      <div id="saad">
+        <p id="p-02" >⭐Project Head</p>
+        <h2 id="h-name">Saadullah Hassan</h2>
+        <p id="abtu-p">Responsible for the overall architecture, game logic, UI/UX design, and project management of PuzzleZone</p>
+        <ul>
+         <li id="skills">html</li>
+         <li id="skills">CSS</li>
+         <li id="skills">JavaScript</li>
+         </ul>
+         <br>
+         <div id="cont-btns">
+           <button id="cont-mail" class="abt-btn">Email</button>
+           <button id="cont-msg" class="abt-btn" >Whatsapp</button>
+         </div>
+      </div>
+      <div id="instructor">
+        <p id="p-02">⭐Project Instructor</p>
+        <h2 id="h-name">Dr.Omar Ajmal</h2>
+        <p>professor in <i>Islamia University Bahawalpur</i>Teching main Courses In Deparment Of Computer Science </p>
+        <ul>
+         <li id="skill-1">Web-Development</li>
+         <li id="skill-1">AI/ML</li>
+         <li id="skill-1">DBMS/Advance DBMS</li>
+        </ul>
+        <br>
+        <div id="cont-btns">
+         <button id="cont-mail" class="abt-btn">Email</button>
+         <button id="cont-msg" class="abt-btn">Whatsapp</button>
+        </div>
+      </div>
+
+
     </section>
     <br>
     <footer>
