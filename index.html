@@ -16,19 +16,22 @@
 <body>
   <header id="header">
     <nav class="games-nav">
-      <a href="#">Home🏠</a>
-      <a href="#">Games🎮</a>
-      <a href="#">FeedBack📬</a>
-      <a href="#">leaderboard🏆</a>
-      <a href="#">Contact Us📞 !</a>
-      <a href="#">About Us</a>
+      <a class="web-nav" href="#home">Home🏠</a>
+      <a class="web-nav" href="#games">Games🎮</a>
+      <a class="web-nav" href="#FeedBack">FeedBack📬</a>
+      <a class="web-nav" href="#leaderboard">Board🏆</a>
+      <a class="web-nav" href="#support">Contact📞</a>
+      <a class="web-nav" href="#aboutUs">About</a>
     </nav>
   </header>
-  <br />
+  <br>
+  <br>
+  <br>
+  <br>
   <main>
-    <section id="main">
+    <section id="home">
       <div id="main-hd">
-        <h1 id="h1-1" class="heading">Word Puzzle🧩<br> <span>& Mind Games🎮</span> </h1>
+        <h1 id="h1-1">Word Puzzle🧩<br> <span>& Mind Games🎮</span> </h1>
         <p>Play Mind Games Sharp Your Brain Boost Your IQ⚡</p>
         <p>
           Challenge your mind, train your brain, and compete with players
@@ -124,25 +127,25 @@
           <h3 id="fdb">FeedBack📬</h3>
           <div id="fedB-7" class="fdb-area">
             <label id="usr-name" for="name">Name
-              <input id="inpt" type="text" placeholder="Name" required />
+              <input id="inpt" class="inpt" type="text" placeholder="Name" required />
             </label>
           </div>
           <br />
           <div id="fedB-1" class="fdb-area">
             <label id="usr-age" for="age">Age
-              <input id="inpt" type="number" placeholder="Age" required />
+              <input id="inpt-2" class="inpt" type="number" placeholder="Age" required />
             </label>
           </div>
           <br />
           <div id="fedB-2" class="fdb-area">
             <label id="usr-mail" for="email">Email
-              <input id="inpt" type="email" placeholder="email Address" required />
+              <input id="inpt-3" class="inpt" type="email" placeholder="email Address" required />
             </label>
           </div>
           <br />
           <div id="fedB-3" class="fdb-area">
             <label id="slct-country" for="country">Country</label>
-            <select name="country" id="inpt" class="cntry">
+            <select name="country" id="inpt-4" class="inpt">
               <option id="slct" value="">---Select country---</option>
               <option id="slct" value="PK">Pakistan</option>
               <option id="slct" value="US">United States</option>
@@ -157,7 +160,7 @@
           <br />
           <div id="fedB-4" class="fdb-area">
             <label id="sbjct" for="subject">Subject
-              <input id="inpt" type="text" placeholder="Write Subject here" required />
+              <input id="inpt-4" class="inpt" type="text" placeholder="Write Subject here" required />
             </label>
           </div>
           <br />
@@ -185,7 +188,7 @@
     <section id="leaderboard">
       <div id="ld-01">
         <h2 id="ldr-hed">Leaderboard🏆</h2>
-        <table id="leaderboard">
+        <table id="leaderboard-tbl">
           <thead>
           <tr id="tbl-hd">
             <th>Rank</th>
@@ -217,8 +220,8 @@
          </ul>
          <br>
          <div id="cont-btns">
-           <button id="cont-mail" class="abt-btn">Email</button>
-           <button id="cont-msg" class="abt-btn" >Whatsapp</button>
+         <a id="cont-mail" class="abt-btn" href="mailto:saadullahhassan474@gmail.com">Email</a>
+         <a id="cont-msg" class="abt-btn" href="https://wa.me/923357741537">Whatsapp</a>
          </div>
       </div>
       <div id="instructor">
@@ -232,28 +235,29 @@
         </ul>
         <br>
         <div id="cont-btns">
-         <button id="cont-mail" class="abt-btn">Email</button>
-         <button id="cont-msg" class="abt-btn">Whatsapp</button>
+         <a id="cont-mail" class="abt-btn" href="mailto:omer.cs.iub@gmail.com">Email</a>
+         <a id="cont-msg" class="abt-btn" href="https://wa.me/923346860593">Whatsapp</a>
         </div>
       </div>
 
 
     </section>
     <br>
-    <footer>
+    <footer id="support">
       <div class="support">
         <h4>Contact Us for further information</h4>
-        <div id="e-sup"><a id="em-sup" href="saadullahhassan474@gmail.com">Email Support📧</a>
+        <div id="e-sup"><a id="em-sup" href="mailto:saadullahhassan474@gmail.com">Email Support📧</a>
         </div>
         <br>
         <br>
         <div id="c-sup">
-          <a id="ch-sup" href="https//:wa.me/03357741537">Chat Support 📞</a>
+          <a id="ch-sup" href="https://wa.me/923357741537">Chat Support 📞</a>
         </div>
       </div>
       <P id="p-1">© 2026 Puzzle Games All Rights Reserved</p>
     </footer>
   </main>
+      <script src="js/main.js"></script>
 </body>
 
 </html>

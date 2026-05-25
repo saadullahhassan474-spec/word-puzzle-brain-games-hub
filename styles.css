@@ -4,15 +4,54 @@ body{
     padding: 0px;
     margin: 0px;
     color: white;
+    overflow-x: hidden;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+
 
 nav{
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px;
     background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif
 }
+
+.web-nav{
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid white;
+    transition: 0.3s;
+
+}
+
+.web-nav:hover{
+    transform: translateY(1px);
+    color: red;
+}
+
+.games-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 
 #stats{
     display: flex;
@@ -195,7 +234,7 @@ nav{
 
 }
 
-#inpt{
+.inpt{
     width: 100%;
     height: 50px;
     border: 1px solid white;
@@ -244,9 +283,12 @@ nav{
     transform: scale(1.1);
 }
 
-a {
+a{
     text-decoration: none;
     color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 #main-hd{
@@ -258,7 +300,8 @@ a {
 #ld-01{
     padding: 10px;
     width: 70%;
-    height: 500px;
+    height: fit-content;
+    flex-wrap: wrap;
     margin: auto;
     background-color: #082702;
     border: 2px solid white;
@@ -303,6 +346,7 @@ th, td{
 
 #aboutUs{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
@@ -354,9 +398,10 @@ th, td{
 
 .abt-btn{
     width: 120px;
-    height: 45px;
+    height: 35px;
     background-color: transparent;
     border: 1px solid white;
+
     border-radius: 10px;
     transition: 0.4s;
     color: white;
@@ -373,7 +418,8 @@ th, td{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    text-align: center;
 }
 
 #saad:hover, #instructor:hover{
