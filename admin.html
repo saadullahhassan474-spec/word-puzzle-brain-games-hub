@@ -1,28 +1,134 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Panel</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&family=Orbitron:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="admin-page">
     <section id="password">
-    <h1 id="main-hd">⚙️Admin Panel</h1>
-    <p id="main-p">PuzzleZone Leaderboard Management</p>
-    <label id="usr-name" for="name">UserName
-        <input type="text" placeholder="Username" required/>
-    </label>
-    <label id="us-pass" for="password">password
-        <input type="password" placeholder="Password">
-    </label>
-    <button id="log-in">🔐 Login</button>
-    <p id="err-msg">❌ Wrong username or password.</p>
+      <h1 id="admn-hd">⚙️Admin Panel</h1>
+      <p id="main-p">PuzzleZone Leaderboard Management</p>
+      <div id="log-sys">
+        <label for="name"
+          >UserName
+          <input
+            class="user-cred"
+            type="text"
+            placeholder="Username"
+            required
+          />
+        </label>
+        <br />
+        <label for="password"
+          >Password
+          <input
+            class="user-cred"
+            type="password"
+            placeholder="Password"
+            required
+          />
+        </label>
+        <button type="submit" id="log-in">🔐 Login</button>
+        <p id="err-msg">❌ Wrong username or password.</p>
+      </div>
+      <h3 id="wlcm">Welcome Back Saad</h3>
     </section>
 
-    <section id="adminPanel">
-        <h1 id="admin-hd">⚙️ PuzzleZone Admin</h1>
-        <button id="log-out">Logout</button> 
-        
+    <section id="admin-Panel">
+      <h1 id="admin-hd">⚙️ PuzzleZone Admin</h1>
+      <p id="admin-p">👤 admin</p>
+      <div id="back-link">
+         <a id="goBack" href="./index.html">back to site⬅️</a>
+      </div>
+    </section>
+    <section id="settings">
+      <p id="hd-1">⚙️ Game Settings — Auto-apply to Live Games</p>
+      <button id="wrd-pzl" class="admn-btns">🔢Word puzzle</button>
+      <button id="mth-qz" class="admn-btns">🧮Math Quiz</button>
+      <button id="guess-nmbr" class="admn-btns">🔮 Guess Number</button>
     </section>
 
-</body>
+    <section id="game-config">
+      <div id="timer-box">
+        <label for="timer-input" id="timer-hd">TIMER (SECONDS)</label>
+
+        <div id="timer-controls">
+          <input type="number" id="timer-input" />
+
+          <button id="save-time">💾 Save Timer</button>
+        </div>
+      </div>
+
+      <div class="word-box">
+        <div class="word-head">
+          <h2 id="easy-hd">🟢 Easy Words</h2>
+
+          <div class="add-word">
+            <input type="text" id="easy-input" placeholder="Add Easy Word" />
+            <button id="easy-add">Add</button>
+          </div>
+        </div>
+
+        <div id="easy-words">
+          <div class="word-tag">
+            apple
+            <button id="easy-add">✖</button>
+          </div>
+
+          <div class="word-tag">
+            green
+            <button id="easy-add">✖</button>
+          </div>
+
+          <div class="word-tag">
+            game
+            <button id="easy-add">✖</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="word-box">
+        <div class="word-head">
+          <h2 id="medium-hd">🟠 Med-Words</h2>
+
+          <div class="add-word">
+            <input
+              type="text"
+              id="medium-input"
+              placeholder="Add Medium Word"
+            />
+            <button id="medium-add">Add</button>
+          </div>
+        </div>
+
+        <div id="medium-words">
+          <div class="word-tag">
+            puzzle
+            <button id="medium-add">✖</button>
+          </div>
+
+          <div class="word-tag">
+            galaxy
+            <button id="medium-add">✖</button>
+          </div>
+
+          <div class="word-tag">
+            mystery
+            <button id="medium-add">✖</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
