@@ -512,8 +512,8 @@ footer{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 420px;
-    height: fit-content;
+    width: 300px;
+    height: 300px;
     margin: auto;
     padding: 25px;
     border: 1px solid white;
@@ -536,7 +536,8 @@ footer{
     padding-left: 15px;
     border: 1px solid white;
     border-radius: 10px;
-    background-color: white;
+    background-color: transparent;
+    color: white;
 }
 
 #log-in{
@@ -544,7 +545,7 @@ footer{
     height: 50px;
     margin-top: 20px;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: transparent;
     color: white;
     cursor: pointer;
@@ -561,11 +562,21 @@ footer{
     0 0 40px darkred;
 }
 
+
+
+#loginBtns{
+    display: flex;
+    align-items: end;
+    font-family: 'Exo 2', sans-serif;
+    gap: 20px;
+}
+
 #err-msg{
+    text-align: center;
     margin-top: 30px;
-    font-size: 20px;
-    font-weight: 700;
     color: #ff4d6d;
+    font-family: 'Exo 2', sans-serif;
+    font-size: small;
 }
 
 #wlcm{
@@ -581,23 +592,21 @@ footer{
 
 }
 
-#back-link{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-}
 
 #goBack{
-    width: 110px;
-    height: 35px;
+    width: 150px;
+    height: 50px;
     border: 1px solid white;
     border-radius: 5px;
-    text-align: center;
     transition: 0.3s;
     color: red;
     font-family: 'Exo 2', sans-serif;
 
+}
+
+#back-link{
+    display: flex;
+    justify-content: center;
 }
 
 #goback:hover{
@@ -618,6 +627,7 @@ footer{
 #hd-1{
     font-family: 'Orbitron', sans-serif;
     font-size: 32px;
+    text-align: center;
     border: 1px solid white;
     border-radius: 10px;
     padding-bottom: 15px;
@@ -642,19 +652,24 @@ footer{
 }
 
 
-.admn-btns{
-    width: 220px;
-    height: 55px;
-    margin-right: 15px;
+.admn-sec{
+    width: 100%;
+    height: 40px;
+    text-align: center;
     border: 1px solid white;
-    border-radius: 12px;
+    border-radius: 8px;
     background-color: transparent;
     color: #8b8b8b;
     cursor: pointer;
     transition: 0.3s;
     font-size: 20px;
     font-family: 'Exo 2', sans-serif;
+    text-shadow:    
+        0 0 10px darkred,
+        0 0 20px darkred;
 }
+
+
 
 .admn-btns:hover{
     transform: translateY(-5px);
@@ -669,23 +684,6 @@ footer{
 }
 
 
-#game-config{
-    width: 92%;
-    margin: auto;
-    margin-top: 30px;
-    padding: 25px;
-    border: 1px solid white;
-    border-radius: 20px;
-    background-color: transparent;
-    transition: 0.3s;
-}
-
-#game-config:hover{
-    box-shadow:
-    0 0 10px crimson,
-    0 0 20px crimson,
-    0 0 40px crimson;
-}
 
 #timer-box{
     margin-bottom: 35px;
@@ -716,7 +714,7 @@ footer{
     font-size: 20px;
 }
 
-#save-time{
+.save-btns{
     width: 190px;
     height: 52px;
     border: 1px solid white;
@@ -724,15 +722,23 @@ footer{
     background-color: transparent;
     color: white;
     cursor: pointer;
-    transition: 0.3s;
+    align-self: self-end;
     font-size: 20px;
     font-family: 'Exo 2', sans-serif;
+    transition: 0.3s;
 }
 
-#save-time:hover{
+.save-btns:hover{
     transform: scale(1.05);
 }
 
+#saved-msg{
+    color: #00ff99;
+    text-shadow: 
+       0 0 10px yellowgreen,
+       0 0 20px yellowgreen;
+       font-family:'Exo 2', sans-serif;
+}
 
 #words-container{
     display: flex;
@@ -757,9 +763,9 @@ footer{
 .word-box:hover{
     transform: translateY(-5px);
     box-shadow:
-    0 0 10px crimson,
-    0 0 20px crimson,
-    0 0 40px crimson;
+    0 0 10px darkred,
+    0 0 20px darkred,
+    0 0 40px darkred;
 }
 
 .word-head{
@@ -840,8 +846,8 @@ footer{
     transform: scale(1.05);
 }
 
-.word-tag #easy-add,
-.word-tag #medium-add{
+.word-tag #easy-del,
+.word-tag #medium-del{
     width: 28px;
     height: 28px;
     border-radius: 50%;
@@ -851,10 +857,50 @@ footer{
     color: #ff3d5a;
 }
 
-.word-tag #easy-add:hover,
-.word-tag #medium-add:hover{
+.word-tag #easy-del:hover,
+.word-tag #medium-del:hover{
     background-color: #ff3d5a;
     color: white;
+}
+
+#quiz-box{
+
+    font-family: 'Exo 2', sans-serif;
+
+}
+
+#math-quiz{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    padding: 25px;
+    gap: 30px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: 'Exo 2', sans-serif;
+}
+
+#math-quiz:hover{
+    box-shadow: 
+        0 0 10px darkred,
+        0 0 20px darkred,
+        0 0 40px darkred;
+}
+
+.admin-inpt{
+    width: 250px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+
 }
 
 @media(max-width:768px){
@@ -890,6 +936,8 @@ footer{
         flex-direction: column;
         gap: 15px;
     }
+
+    
 
 
 }

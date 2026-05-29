@@ -1,134 +1,136 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Panel</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&family=Orbitron:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body class="admin-page">
-    <section id="password">
-      <h1 id="admn-hd">⚙️Admin Panel</h1>
-      <p id="main-p">PuzzleZone Leaderboard Management</p>
-      <div id="log-sys">
-        <label for="name"
-          >UserName
-          <input
-            class="user-cred"
-            type="text"
-            placeholder="Username"
-            required
-          />
-        </label>
-        <br />
-        <label for="password"
-          >Password
-          <input
-            class="user-cred"
-            type="password"
-            placeholder="Password"
-            required
-          />
-        </label>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&family=Orbitron:wght@400;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body class="admin-page">
+  <section id="password">
+    <h1 id="admn-hd">⚙️Admin Panel</h1>
+    <p id="main-p">PuzzleZone Leaderboard Management</p>
+    <div id="log-sys">
+      <label for="name">UserName
+        <input class="user-cred" type="text" placeholder="Username" required />
+      </label>
+      <br />
+      <label for="password">Password
+        <input class="user-cred" type="password" placeholder="Password" required />
+      </label>
+      <div id="loginBtns">
         <button type="submit" id="log-in">🔐 Login</button>
-        <p id="err-msg">❌ Wrong username or password.</p>
+        <a id="goBack" href="./index.html">Back to Site⬅️</a>
       </div>
-      <h3 id="wlcm">Welcome Back Saad</h3>
-    </section>
+      <p id="err-msg">❌ Wrong username or password.</p>
+    </div>
+  </section>
 
-    <section id="admin-Panel">
-      <h1 id="admin-hd">⚙️ PuzzleZone Admin</h1>
-      <p id="admin-p">👤 admin</p>
-      <div id="back-link">
-         <a id="goBack" href="./index.html">back to site⬅️</a>
+  <section id="admin-Panel">
+    <h3 id="wlcm">Welcome Back Saad</h3>
+    <h1 id="admin-hd">⚙️ PuzzleZone Admin</h1>
+    <p id="admin-p">👤 admin</p>
+    <div id="back-link">
+      <a id="goBack" href="./index.html">Back to Site⬅️</a>
+    </div>
+  </section>
+  <section id="settings">
+    <p id="hd-1">⚙️ Game Settings</p>
+    <h5 id="wrd-pzl" class="admn-sec">🔢Word puzzle</h5>
+  </section>
+
+  <section id="game-config">
+    <div id="word-puzzle">
+     <div id="timer-box">
+      <label for="timer-input" id="timer-hd">TIMER (SECONDS)</label>
+
+      <div id="timer-controls">
+        <input type="number" id="timer-input" value="" />
+
+        <button id="save-time" class="save-btns">💾 Save Settings</button>
+        <p id="saved-msg">Saved successfully ✅</p>
       </div>
-    </section>
-    <section id="settings">
-      <p id="hd-1">⚙️ Game Settings — Auto-apply to Live Games</p>
-      <button id="wrd-pzl" class="admn-btns">🔢Word puzzle</button>
-      <button id="mth-qz" class="admn-btns">🧮Math Quiz</button>
-      <button id="guess-nmbr" class="admn-btns">🔮 Guess Number</button>
-    </section>
+     </div>
 
-    <section id="game-config">
-      <div id="timer-box">
-        <label for="timer-input" id="timer-hd">TIMER (SECONDS)</label>
+     <div class="word-box">
+      <div class="word-head">
+        <h2 id="easy-hd">🟢 Easy Words</h2>
 
-        <div id="timer-controls">
-          <input type="number" id="timer-input" />
-
-          <button id="save-time">💾 Save Timer</button>
+        <div class="add-word">
+          <input type="text" id="easy-input" placeholder="Add Easy Word" />
+          <button id="easy-add">Add</button>
         </div>
       </div>
 
-      <div class="word-box">
-        <div class="word-head">
-          <h2 id="easy-hd">🟢 Easy Words</h2>
-
-          <div class="add-word">
-            <input type="text" id="easy-input" placeholder="Add Easy Word" />
-            <button id="easy-add">Add</button>
-          </div>
+      <div id="easy-words">
+        <div class="word-tag">
+          apple
+          <button id="easy-del">✖</button>
         </div>
 
-        <div id="easy-words">
-          <div class="word-tag">
-            apple
-            <button id="easy-add">✖</button>
-          </div>
+        <div class="word-tag">
+          green
+          <button id="easy-del">✖</button>
+        </div>
 
-          <div class="word-tag">
-            green
-            <button id="easy-add">✖</button>
-          </div>
-
-          <div class="word-tag">
-            game
-            <button id="easy-add">✖</button>
-          </div>
+        <div class="word-tag">
+          game
+          <button id="easy-del">✖</button>
         </div>
       </div>
-      <br>
-      <div class="word-box">
-        <div class="word-head">
-          <h2 id="medium-hd">🟠 Med-Words</h2>
+     </div>
+     <br>
+     <div class="word-box">
+      <div class="word-head">
+        <h2 id="medium-hd">🟠 Med-Words</h2>
 
-          <div class="add-word">
-            <input
-              type="text"
-              id="medium-input"
-              placeholder="Add Medium Word"
-            />
-            <button id="medium-add">Add</button>
-          </div>
-        </div>
-
-        <div id="medium-words">
-          <div class="word-tag">
-            puzzle
-            <button id="medium-add">✖</button>
-          </div>
-
-          <div class="word-tag">
-            galaxy
-            <button id="medium-add">✖</button>
-          </div>
-
-          <div class="word-tag">
-            mystery
-            <button id="medium-add">✖</button>
-          </div>
+        <div class="add-word">
+          <input type="text" id="medium-input" placeholder="Add Medium Word" />
+          <button id="medium-add">Add</button>
         </div>
       </div>
-    </section>
-  </body>
+
+      <div id="medium-words">
+        <div class="word-tag">
+          puzzle
+          <button id="medium-del">✖</button>
+        </div>
+
+        <div class="word-tag">
+          galaxy
+          <button id="medium-del">✖</button>
+        </div>
+
+        <div class="word-tag">
+          mystery
+          <button id="medium-del">✖</button>
+        </div>
+      </div>
+     </div>
+    </div>
+  </section>
+      
+    
+  <section id="quiz-box">
+    <h5 id="mth-qz" class="admn-sec">🧮Math Quiz</h5>
+    <div id="math-quiz">
+      <label for="time-lmt" >Time-Limit
+        <input id="quiz" class="admin-inpt" type="number" value="30">
+      </label>
+      <label for="diff-level">Difficulty Level
+        <input id="diff-lv" class="admin-inpt" type="number" value="10">
+      </label>
+      <button id="save-ch" class="save-btns">💾 Save Settings</button>
+    </div>
+  </section>
+  <script src="./admin.js"></script>
+</body>
+
 </html>
