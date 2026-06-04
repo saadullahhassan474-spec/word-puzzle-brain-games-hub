@@ -273,6 +273,10 @@ nav:hover{
     color: white;
 }
 
+#textarea{
+    color: white;
+}
+
 #slct{
     color: black;
 }
@@ -284,6 +288,11 @@ nav:hover{
     border: 1px solid white;
     border-radius:15px;
 
+}
+
+.error-msg {
+    color: red;
+    font-size: 12px;
 }
 
 #e-sup{

@@ -1,16 +1,44 @@
 {
+  "leaderboard": [
+    {
+      "id": "1",
+      "playerName": "Saad",
+      "gameName": "Guess The Number",
+      "score": 150,
+      "date": "2026-06-04"
+    },
+    {
+      "id": "2",
+      "playerName": "Ali",
+      "gameName": "Math Quiz",
+      "score": 200,
+      "date": "2026-06-04"
+    },
+    {
+      "id": "3",
+      "playerName": "Ahmed",
+      "gameName": "Word Puzzle",
+      "score": 120,
+      "date": "2026-06-04"
+    }
+  ],
+  "feedback": [
+    {
+      "name": "Saadullah Hassan",
+      "age": "15",
+      "email": "saadullahhassan474@gmail.com",
+      "country": "PK",
+      "subject": "nothing",
+      "message": "none",
+      "date": "6/4/2026",
+      "id": "gs8bxJsiItc"
+    }
+  ],
   "settings": [
     {
       "id": "1",
-      "time": 120,
-      "settings": {
-        "id": 1,
-        "time": 120
-      }
+      "time": 120
     }
   ],
-  "easyWords": [],
-  "mediumWords": [],
-  "leaderboard": [],
   "$schema": "./node_modules/json-server/schema.json"
 }

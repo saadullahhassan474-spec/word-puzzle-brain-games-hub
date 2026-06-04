@@ -117,19 +117,22 @@
           <h3 id="fdb">FeedBack📬</h3>
           <div id="fedB-7" class="fdb-area">
             <label id="usr-name" for="name">Name
-              <input id="inpt" class="inpt" type="text" placeholder="Name" required />
+              <input id="inpt" class="inpt" type="text" placeholder="Name" />
+              <span id="name-error" class="error-msg"></span>
             </label>
           </div>
           <br />
           <div id="fedB-1" class="fdb-area">
             <label id="usr-age" for="age">Age
-              <input id="inpt-2" class="inpt" type="number" placeholder="Age" required />
+              <input id="inpt-2" class="inpt" type="number" placeholder="Age" />
+              <span id="age-error" class="error-msg"></span>
             </label>
           </div>
           <br />
           <div id="fedB-2" class="fdb-area">
             <label id="usr-mail" for="email">Email
               <input id="inpt-3" class="inpt" type="email" placeholder="email Address" required />
+              <span id="email-error" class="error-msg"></span>
             </label>
           </div>
           <br />
@@ -146,23 +149,27 @@
               <option id="slct" value="IRN">Iran</option>
               <option id="slct" value="Ger">Germany</option>
             </select>
+            <span id="country-error" class="error-msg"></span>
           </div>
           <br />
           <div id="fedB-4" class="fdb-area">
             <label id="sbjct" for="subject">Subject
-              <input id="inpt-4" class="inpt" type="text" placeholder="Write Subject here" required />
+              <input id="inpt-5" class="inpt" type="text" placeholder="Write Subject here" />
+              <span id="subject-error" class="error-msg"></span>
             </label>
           </div>
           <br />
           <div id="fedB-5" class="fdb-area">
             <label id="usr-fdb" for="FeedBack">FeedBack
-              <textarea name="message" id="textarea" placeholder="Write your message here" required></textarea>
+              <textarea name="message" id="textarea" placeholder="Write your message here"></textarea>
+              <span id="message-error" class="error-msg"></span>
             </label>
           </div>
           <br />
           <div id="fedB-6" class="fdb-area">
             <label for="101">
-              <input type="checkbox" id="101" required  />Agree terms and conditions
+              <input name="terms" type="checkbox" id="101" required  />Agree terms and conditions
+              <span id="tc-error" class="error-msg"></span>
             </label>
           </div>
           <br>
