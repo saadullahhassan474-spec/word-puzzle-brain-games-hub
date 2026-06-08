@@ -336,7 +336,7 @@ a{
 
 #ld-01{
     padding: 10px;
-    width: 70%;
+    width: fit-content;
     height: fit-content;
     flex-wrap: wrap;
     margin: auto;
@@ -353,13 +353,14 @@ table{
     margin: auto;
     border-collapse: collapse;
     text-align: center;
-
+    
 }
 
 th, td{
     border: 2px solid white;
     padding: 15px;
     color: white;
+    
 }
 
 #ld-01:hover{
