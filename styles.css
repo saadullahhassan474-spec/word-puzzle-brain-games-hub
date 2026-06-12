@@ -348,19 +348,27 @@ a{
     
 }
 
+#loading-msg {
+    display: none;
+}
+
+#error-msg {
+    color: red;
+    font-size: 14px;
+}
+
 table{
     width: 90%;
     margin: auto;
     border-collapse: collapse;
     text-align: center;
-    
+
 }
 
 th, td{
     border: 2px solid white;
     padding: 15px;
     color: white;
-    
 }
 
 #ld-01:hover{
@@ -662,25 +670,6 @@ footer{
 }
 
 
-.admn-sec{
-    width: 100%;
-    height: 40px;
-    text-align: center;
-    border: 1px solid white;
-    border-radius: 8px;
-    background-color: transparent;
-    color: #8b8b8b;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 20px;
-    font-family: 'Exo 2', sans-serif;
-    text-shadow:    
-        0 0 10px darkred,
-        0 0 20px darkred;
-}
-
-
-
 .admn-btns:hover{
     transform: translateY(-5px);
     box-shadow:
@@ -689,189 +678,84 @@ footer{
     0 0 40px crimson;
 }
 
+#admin-stats{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.admn-stats{
+    text-align: center;
+    width: 160px;
+    height: 70px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+#ld-mng{
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+#ldr-mng{
+    width: 550px;
+    height: fit-content;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+#fdb-mng{
+    text-align: center;
+}
+
+#edit {
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;
+    height: fit-content;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid darkred;
+    border-radius: 10px;
+}
+
+.admn-btn{
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+#admn-btns{
+    display: flex;
+    gap: 10px;
+}
+
+.admn-btn:hover{
+    transform: translateY(1px);
+    box-shadow: 
+       0px 0px 10px darkred,
+       0px 0px 20px darkred,
+       0px 0px 40px darkred;
+}
+
 #wrd-pzl{
     border: 1px soli white;
 }
 
 
-
-#timer-box{
-    margin-bottom: 35px;
-}
-
-#timer-hd{
-    display: block;
-    margin-bottom: 15px;
-    font-size: 22px;
-    font-family: 'Orbitron', sans-serif;
-}
-
-#timer-controls{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-#timer-input{
-    width: 180px;
-    height: 50px;
-    padding-left: 15px;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: transparent;
-    color: white;
-    outline: none;
-    font-size: 20px;
-}
-
-.save-btns{
-    width: 190px;
-    height: 52px;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: transparent;
-    color: white;
-    cursor: pointer;
-    align-self: self-end;
-    font-size: 20px;
-    font-family: 'Exo 2', sans-serif;
-    transition: 0.3s;
-}
-
-.save-btns:hover{
-    transform: scale(1.05);
-}
-
-#saved-msg{
-    color: #00ff99;
-    text-shadow: 
-       0 0 10px yellowgreen,
-       0 0 20px yellowgreen;
-       font-family:'Exo 2', sans-serif;
-}
-
-#words-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-}
-
-
-.word-box{
-    display: flex;
-    flex-wrap: wrap;
-    width: 800px;
-    height: 220px;
-    padding: 20px;
-    border: 1px solid white;
-    border-radius: 20px;
-    background-color: transparent;
-    transition: 0.3s;
-}
-
-.word-box:hover{
-    transform: translateY(-5px);
-    box-shadow:
-    0 0 10px darkred,
-    0 0 20px darkred,
-    0 0 40px darkred;
-}
-
-.word-head{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-#easy-hd,
-#medium-hd{
-    font-family: 'Orbitron', sans-serif;
-    font-size: 28px;
-    color: #ff3d5a;
-}
-
-.add-word{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-#easy-input,
-#medium-input{
-    width: 220px;
-    height: 45px;
-    padding-left: 15px;
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 10px;
-    background-color: #180105;
-    color: white;
-    outline: none;
-    font-size: 17px;
-}
-
-#easy-add,
-#medium-add{
-    width: 90px;
-    height: 45px;
-    border: 1px solid #ff3d5a;
-    border-radius: 10px;
-    background-color: transparent;
-    color: #ff3d5a;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 18px;
-}
-
-#easy-add:hover,
-#medium-add:hover{
-    background-color: #ff3d5a;
-    color: white;
-}
-
-#easy-words,
-#medium-words{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 30px;
-}
-
-.word-tag{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 15px;
-    border-radius: 30px;
-    background-color: rgba(255,0,85,0.08);
-    border: 1px solid rgba(255,255,255,0.08);
-    color: #d4d4d4;
-    transition: 0.3s;
-}
-
-.word-tag:hover{
-    border-color: #ff3d5a;
-    transform: scale(1.05);
-}
-
-.word-tag #easy-del,
-.word-tag #medium-del{
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    font-size: 13px;
-    background-color: rgba(255,255,255,0.08);
-    border: none;
-    color: #ff3d5a;
-}
-
-.word-tag #easy-del:hover,
-.word-tag #medium-del:hover{
-    background-color: #ff3d5a;
-    color: white;
-}
 
 #quiz-box{
 
@@ -913,25 +797,117 @@ footer{
 
 }
 
+#name-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-box {
+    background: #1a1a1a;
+    display: flex;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#num-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.matched {
+    background-color: #1a5c1a;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.wrong {
+    background-color: red;
+}
+
+#guess-game {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#guess-box {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid greenyellow;
+}
+
+#guess-input {
+    width: 200px;
+    height: 45px;
+    padding-left: 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    margin: auto;
+}
+
+#num-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.num-btn {
+    width: 60px;
+}
+
+.selected {
+    background-color: orange;
+}
+
+.matched {
+    display: none;
+}
+
+#guess-input.hidden-input {
+    display: none;
+}
+#guess-btn.hidden-btn {
+    display: none;
+}
+
+.hide-element {
+    display: none;
+}
+
 @media(max-width:768px){
 
-    .word-box{
-        width: 100%;
-    }
-
-    .word-head{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .add-word{
-        width: 100%;
-    }
-
-    #easy-input,
-    #medium-input{
-        width: 100%;
-    }
 
     #log-sys{
         width: 90%;

@@ -67,7 +67,7 @@
           <li>Mulltiple difficulty levels</li>
         </ul>
         <div id="btn-1" class="p-btns">
-          <button id="btn-play" class="btns">Play Now▶ </button>
+          <button id="wrd-p-btn" class="btns">Play Now▶ </button>
         </div>
       </div>
       <div id="card-03" class="g-cards">
@@ -80,7 +80,7 @@
           <li>Multiple difficulty levels</li>
         </ul>
         <div id="btn-3" class="p-btns">
-          <button id="btn-play" class="btns">Play Now▶</button>
+          <button id="nmbr-match-btn" class="btns">Play Now▶</button>
         </div>
       </div>
       <div id="card-04" class="g-cards">
@@ -93,7 +93,7 @@
           <li>Score multiplier system</li>
         </ul>
         <div id="btn-4" class="p-btns">
-          <button id="btn-play" class="btns">Play Now▶</button>
+          <button id="mth-q-btn" class="btns">Play Now▶</button>
         </div>
       </div>
       <div id="card-05" class="g-cards">
@@ -106,7 +106,7 @@
           <li>Every answer boosts your score</li>
         </ul>
         <div id="btn-5" class="p-btns">
-          <button id="btn-play" class="btns">Play Now▶</button>
+          <button id="Gss-nmbr-btn" class="btns">Play Now▶</button>
         </div>
       </div>
     </section>
@@ -185,6 +185,8 @@
     <section id="leaderboard">
       <div id="ld-01">
         <h2 id="ldr-hed">Leaderboard🏆</h2>
+        <p id="loading-msg">Loading...</p>
+        <p id="error-msg"></p>
         <table id="leaderboard-tbl">
           <thead>
           <tr id="tbl-hd">
@@ -254,6 +256,24 @@
       <P id="p-1">© 2026 Puzzle Games All Rights Reserved</p>
     </footer>
   </main>
+   <div id="name-modal" class="hidden">
+     <div id="modal-box">
+        <h2>Enter Your Name</h2>
+        <input type="text" id="player-name" placeholder="Your Name" />
+        <button id="start-game-btn">Start Game</button>
+     </div>
+   </div>
+   <div id="guess-game" class="hidden">
+    <div id="guess-box">
+        <h2>Guess The Number 🔮</h2>
+        <p id="guess-player-name"></p>
+        <p id="guess-hint">Guess a number between 1 and 100</p>
+        <input type="number" id="guess-input" placeholder="Enter your guess" />
+        <button id="guess-btn" class="btns">Guess!</button>
+        <p id="guess-result"></p>
+        <p id="guess-tries"></p>
+    </div>
+</div>
       <script src="./app.js"></script>
 </body>
 

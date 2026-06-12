@@ -2,7 +2,7 @@
   "leaderboard": [
     {
       "id": "1",
-      "playerName": "Saad",
+      "playerName": "SAAD",
       "gameName": "Guess The Number",
       "score": 150,
       "date": "2026-06-04"
@@ -20,6 +20,13 @@
       "gameName": "Word Puzzle",
       "score": 120,
       "date": "2026-06-04"
+    },
+    {
+      "playerName": "Saad",
+      "gameName": "Math Quiz",
+      "score": 500,
+      "date": "6/12/2026",
+      "id": "wZgBWFJqAuw"
     }
   ],
   "feedback": [
@@ -32,6 +39,16 @@
       "message": "none",
       "date": "6/4/2026",
       "id": "gs8bxJsiItc"
+    },
+    {
+      "name": "abdul rehman",
+      "age": "22",
+      "email": "saadullahhassan474@outlook.com",
+      "country": "PK",
+      "subject": "nooooo",
+      "message": "stuck",
+      "date": "6/12/2026",
+      "id": "cya6HNzc0ho"
     }
   ],
   "settings": [
@@ -39,5 +56,6 @@
       "id": "1",
       "time": 120
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

@@ -428,13 +428,20 @@ function startNumMatchGame(playerName) {
 
 const wordPuzzleBtn = document.getElementById("wrd-p-btn");
 
-wordPuzzleBtn.addEventListener("click", function () {
+wordPuzzleBtn.addEventListener("click", function (e) {
+  e.preventDefault();
   nameModal.style.display = "flex";
-  document.getElementById("modal-box").innerHTML = `<h2>🔧 Under Maintenance<h2>
-    <p>Word  Puzzle is Out of Order ⚙️ </p>`;
-
+  document.getElementById("modal-box").innerHTML = `
+        <h2>🔧 Under Maintenance</h2>
+        <p>Word Puzzle is coming soon!</p>
+    `;
   setTimeout(function () {
-    document.getElementById("modal-box").style.display = "none";
     nameModal.style.display = "none";
+    document.getElementById("modal-box").innerHTML = `
+            <h2>Enter Your Name</h2>
+            <input type="text" id="player-name" placeholder="Your Name" />
+            <button id="start-game-btn">Start Game</button>
+        `;
+    startGameBtn.addEventListener("click", function () {});
   }, 3000);
 });
