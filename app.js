@@ -137,12 +137,8 @@ async function postFeedback(feedbackData) {
       throw new Error("Feedback Not Submitted");
     }
     const data = await response.json();
-    console.log("Feedback Submitted:", data);
-  } catch (error) {
-    console.log("Error:", error);
-  }
+  } catch (error) {}
 }
-
 async function postScore(gameData) {
   try {
     const response = await fetch(`${API}/leaderboard`, {
@@ -162,7 +158,6 @@ async function postScore(gameData) {
       .getElementById("leaderboard")
       .scrollIntoView({ behavior: "smooth" });
   } catch (error) {
-    console.log("Error:", error);
   }
 }
 
@@ -430,11 +425,11 @@ const wordPuzzleBtn = document.getElementById("wrd-p-btn");
 
 wordPuzzleBtn.addEventListener("click", function (e) {
   e.preventDefault();
-  nameModal.style.display = "flex";
   document.getElementById("modal-box").innerHTML = `
         <h2>🔧 Under Maintenance</h2>
         <p>Word Puzzle is coming soon!</p>
     `;
+  nameModal.style.display = "flex";
   setTimeout(function () {
     nameModal.style.display = "none";
     document.getElementById("modal-box").innerHTML = `
@@ -442,6 +437,22 @@ wordPuzzleBtn.addEventListener("click", function (e) {
             <input type="text" id="player-name" placeholder="Your Name" />
             <button id="start-game-btn">Start Game</button>
         `;
-    startGameBtn.addEventListener("click", function () {});
-  }, 3000);
+    document
+      .getElementById("start-game-btn")
+      .addEventListener("click", function () {
+        const playerName = document.getElementById("player-name").value;
+        if (playerName === "") {
+          alert("Please enter your name!");
+          return;
+        }
+        nameModal.style.display = "none";
+        if (currentGame === "guess") {
+          startGuessGame(playerName);
+        } else if (currentGame === "math") {
+          startMathGame(playerName);
+        } else if (currentGame === "numMatch") {
+          startNumMatchGame(playerName);
+        }
+      });
+  }, 1500);
 });

@@ -13,7 +13,7 @@ const stats = document.getElementById("statics");
 const management = document.getElementById("management");
 const adminEdit = document.getElementById("admn-settings");
 const adminLeaderboard = document.getElementById("admin-fdb");
-
+let editId = "";
 
 errMsg.style.display = "none";
 adminPanel.style.display = "none";
@@ -66,7 +66,6 @@ document.addEventListener("keydown", function(event){
         displayLeaderboard(leaderboardData);
         displayFeedback(feedbackData);
     } catch(error) {
-        console.log("Error:", error);
     }
 }
 
@@ -131,7 +130,6 @@ document.getElementById("save-edit").addEventListener("click", async function(e)
         getAdminData();
         e.preventDefault();
     } catch(error) {
-        console.log("Error:", error);
     }
 });
 
@@ -147,7 +145,6 @@ async function deleteLeaderboard(id) {
         if(!response.ok) throw new Error("Delete failed");
         getAdminData();
     } catch(error) {
-        console.log("Error:", error);
     }
 }
 
@@ -179,6 +176,5 @@ async function deleteFeedback(id) {
         if(!response.ok) throw new Error("Delete failed");
         getAdminData();
     } catch(error) {
-        console.log("Error:", error);
     }
 }
