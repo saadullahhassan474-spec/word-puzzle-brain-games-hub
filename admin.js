@@ -111,7 +111,8 @@ function showEdit(id, name, score) {
     document.getElementById("edit").scrollIntoView({behavior: "smooth"});
 }
 
-document.getElementById("save-edit").addEventListener("click", async function() {
+document.getElementById("save-edit").addEventListener("click", async function(e) {
+    e.preventDefault();
     const newName = document.getElementById("edit-name").value;
     const newScore = document.getElementById("edit-score").value;
     try {
@@ -145,7 +146,6 @@ async function deleteLeaderboard(id) {
         });
         if(!response.ok) throw new Error("Delete failed");
         getAdminData();
-        e.preventDefault();
     } catch(error) {
         console.log("Error:", error);
     }
@@ -178,7 +178,6 @@ async function deleteFeedback(id) {
         });
         if(!response.ok) throw new Error("Delete failed");
         getAdminData();
-        e.preventDefault();
     } catch(error) {
         console.log("Error:", error);
     }

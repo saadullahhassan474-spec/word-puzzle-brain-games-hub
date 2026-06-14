@@ -1,45 +1,77 @@
 {
   "leaderboard": [
     {
-      "id": "1",
-      "playerName": "SAAD",
-      "gameName": "Guess The Number",
-      "score": 150,
-      "date": "2026-06-04"
-    },
-    {
-      "id": "2",
-      "playerName": "Ali",
+      "playerName": "Saad almani",
       "gameName": "Math Quiz",
       "score": 200,
-      "date": "2026-06-04"
-    },
-    {
-      "id": "3",
-      "playerName": "Ahmed",
-      "gameName": "Word Puzzle",
-      "score": 120,
-      "date": "2026-06-04"
-    },
-    {
-      "playerName": "Saad",
-      "gameName": "Math Quiz",
-      "score": 500,
       "date": "6/12/2026",
       "id": "wZgBWFJqAuw"
+    },
+    {
+      "playerName": "saad",
+      "gameName": "Number Match",
+      "score": 60,
+      "date": "6/12/2026",
+      "id": "KFyF6m65ftQ"
+    },
+    {
+      "playerName": "saad",
+      "gameName": "Math Quiz",
+      "score": 90,
+      "date": "6/12/2026",
+      "id": "MsZApxruWmo"
+    },
+    {
+      "playerName": "zia",
+      "gameName": "Guess The Number",
+      "score": 75,
+      "date": "6/12/2026",
+      "id": "lM1E1pCFeA0"
+    },
+    {
+      "playerName": "ahmed",
+      "gameName": "Number Match",
+      "score": 50,
+      "date": "6/12/2026",
+      "id": "T07i006-KBk"
+    },
+    {
+      "playerName": "Zahid",
+      "gameName": "Math Quiz",
+      "score": 80,
+      "date": "6/12/2026",
+      "id": "IrAfzk7uDEU"
+    },
+    {
+      "playerName": "Sohaib",
+      "gameName": "Guess The Number",
+      "score": 75,
+      "date": "6/12/2026",
+      "id": "p_v8w_mqXyI"
+    },
+    {
+      "playerName": "Ahsan",
+      "gameName": "Number Match",
+      "score": 50,
+      "date": "6/12/2026",
+      "id": "6Ce_sQX827I"
+    },
+    {
+      "playerName": "Tanveer",
+      "gameName": "Math Quiz",
+      "score": 100,
+      "date": "6/12/2026",
+      "id": "cDoHsl-t68E"
+    },
+    {
+      "playerName": "ALI",
+      "gameName": "Number Match",
+      "score": 60,
+      "date": "6/12/2026",
+      "id": "KizjdXnrYl4"
     }
   ],
   "feedback": [
-    {
-      "name": "Saadullah Hassan",
-      "age": "15",
-      "email": "saadullahhassan474@gmail.com",
-      "country": "PK",
-      "subject": "nothing",
-      "message": "none",
-      "date": "6/4/2026",
-      "id": "gs8bxJsiItc"
-    },
     {
       "name": "abdul rehman",
       "age": "22",
@@ -49,6 +81,26 @@
       "message": "stuck",
       "date": "6/12/2026",
       "id": "cya6HNzc0ho"
+    },
+    {
+      "name": "Saadullahhassan Almani",
+      "age": "21",
+      "email": "saadullahhassanalmani@gmail.com",
+      "country": "IRN",
+      "subject": "stuck",
+      "message": "game got stuck",
+      "date": "6/12/2026",
+      "id": "Jb4fX8EjNSc"
+    },
+    {
+      "name": "Abdul Rehman",
+      "age": "16",
+      "email": "abdul@gmail.com",
+      "country": "PK",
+      "subject": "rating",
+      "message": "this game deserves 5 stars",
+      "date": "6/12/2026",
+      "id": "hJUNjQFiEfw"
     }
   ],
   "settings": [
